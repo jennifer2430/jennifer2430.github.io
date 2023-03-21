@@ -16,8 +16,8 @@ a:hover {
 
 .photo-class {
     border-radius: 20%;
-    max-width: 300px;
-    max-height: 280px;
+    width: 300px;
+    height: 280px;
 }
 
 .left-col {
@@ -87,4 +87,44 @@ small {
 .course-div a {
     display: block;
     margin: 2px;
+}
+
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-back,
+.flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #89c2d9;
+    color: white;
+    padding: 7%;
 }

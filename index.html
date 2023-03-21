@@ -4,10 +4,14 @@
 
 <head>
     <link href="base.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="scripts/toggle.js"></script>
     <title>Jennifer Chen</title>
 </head>
 
 <body>
+    <div class="top-nav">
+    </div>
     <section>
         <div class="row">
             <div class="left-col">
@@ -32,26 +36,30 @@
     </section>
 
     <section>
-        <h2>A more detailed bio</h2>
-        <p>
-            I'm currently a sophomore studying computer science and electrical engineering at UCLA.
-            I'll also be minoring in Japanese once I finish Japan 80 in spring. <br>
-        </p>
-        <p>
-            I grew up in Taiwan and went to school there until I finished grade 10. I then finished
-            my last two years of high school in a boarding school in Victoria, Canada. That was fun.
-        </p>
-        <p>
-            I genuinely love what I've been learning here at UCLA. Having essentially no experience in
-            CS coming in, I feel like I've come so far just by learning from the amazing professors and peers here.
-            Now that I'm essentially done with my lower div requirements, I'm super excited to learn about
-            operating systems, compilers, machine learning, backend technologies, and anything else I can
-            get my hands on.
-        </p>
+        <h2 class="section-header">
+            <div>A more detailed bio</div>
+        </h2>
+        <div class="experience-block">
+            <p>
+                I'm currently a sophomore studying computer science and electrical engineering at UCLA.
+                I'll also be minoring in Japanese once I finish Japan 80 in spring. <br>
+            </p>
+            <p>
+                I grew up in Taiwan and went to school there until I finished grade 10. I then finished
+                my last two years of high school in a boarding school in Victoria, Canada. That was fun.
+            </p>
+            <p>
+                I genuinely love what I've been learning here at UCLA. Having essentially no experience in
+                CS coming in, I feel like I've come so far just by learning from the amazing professors and peers here.
+                Now that I'm essentially done with my lower div requirements, I'm super excited to learn about
+                operating systems, compilers, machine learning, backend technologies, and anything else I can
+                get my hands on.
+            </p>
+        </div>
     </section>
 
     <section>
-        <h2>Internship experience!</h2>
+        <h2 class="section-header">Internship experience!</h2>
         <div class="experience-block">
             <h3>
                 Software Intern @ Raydium Semiconductor (2022)
@@ -66,7 +74,7 @@
     </section>
 
     <section>
-        <h2>Things I Dabbled with at School</h2>
+        <h2 class="section-header">Things I Dabbled with at School</h2>
         <div class="experience-block">
             <h3>IEEE Pocket Racers</h3>
             <p>My second yearlong (and ongoing) project with IEEE. This project focuses on computer vision
@@ -103,13 +111,15 @@
                 work with Arduino, and make some cool projects like an Ipoduino and hand-following car :)
             </p>
         </div>
-        <p>For a more compact version, you can also see my resume <a href="files/jennifer_resume.pdf">here</a></p>
+        <div class="experience-block">
+            For a more compact version, you can also see my resume <a href="files/jennifer_resume.pdf">here</a>
+        </div>
     </section>
     <section>
-        <h2>Courses I've taken</h2>
-        <div>
-            <a id="cs-course-link">Computer Science Courses</a>
-            <ul id="cs-course-content">
+        <h2 class="section-header">Courses I've taken</h2>
+        <div class="course-div experience-block">
+            <a id="cs-course-link" onclick="toggle(this);">Computer Science Courses</a>
+            <ul id="cs-course-content" class="unseen">
                 <li>CS 35L <small>Software Construction Lab, Professor Eggert, W23</small></li>
                 <li>CS 161 <small>Fundamentals of AI, Professor Gu, W23</small></li>
                 <li>CS 180 <small>Algorithms and Complexity, Professor Sarrafzadeh, F22</small></li>
@@ -118,8 +128,9 @@
                 <li>CS 32 <small>Professor Smallberg, W21</small></li>
                 <li>CS 31 <small>Professor Smallberg, F21</small></li>
             </ul>
-            <a id="ee-course-link">Electrical Engineering Courses (Fun fact: I was EE in my freshman year)</a>
-            <ul id="ee-course-content">
+            <a id="ee-course-link" onclick="toggle(this); return false;">Electrical Engineering Courses (Fun fact: I was
+                EE in my freshman year)</a>
+            <ul id="ee-course-content" class="unseen">
                 <li>ECE 113 <small>Digital Signal Processing, Professor Kadambi, W23</small></li>
                 <li>ECE 131A <small>Probability and Statistics, Professor Dolecek, W23</small></li>
                 <li>ECE 102 <small>Signals and Systems, Professor Kao &lt;3, F22</small></li>
@@ -127,19 +138,20 @@
                 <li>ECE 10H <small>Circuit Theory (Honors), Professor Darabi, F22</small></li>
                 <li>ECE 3 <small>Introduction to Electrical Engineering, Professor Briggs, Sp22</small></li>
             </ul>
-            <a id="jp-course-link">Japanese Courses</a>
-            <ul id="jp-course-content">
+            <a id="jp-course-link" onclick="toggle(this); return false;">Japanese Courses</a>
+            <ul id="jp-course-content" class="unseen">
                 <li>Japan 100B <small>Advanced Modern Japanese, Professor Hayashi, W23</small></li>
             </ul>
-            <a id="other-course-link">Others</a>
-            <ul id="other-course-content">
-                <li>EngComp 3 <small>English Composition, Rhetoric, and Language, Professor Deuel, F22</small></li>
+            <a id="other-course-link" onclick="toggle(this); return false;">Others</a>
+            <ul id="other-course-content" class="unseen">
+                <li>EngComp 3 <small>English Composition, Rhetoric, and Language, Professor Deuel, F21</small></li>
+                <li>Engr 96C <small>Internet of Things, Professor Kaiser, F21</small></li>
             </ul>
         </div>
     </section>
     <section>
-        <h2>Favorites outside of School</h2>
-        <ul>
+        <h2 class="section-header">Favorites outside of School</h2>
+        <ul class="experience-block">
             <li>Genre - Fantasy</li>
             <li>Book - I love love love the Mistborn series</li>
             <li>Band - Recently, I've been listening to a lot of Cinema Staff</li>
@@ -148,9 +160,26 @@
             <li>Language - Admittedly, I only speak two fluently and one not-so-fluently, but Chinese</li>
         </ul>
     </section>
-    <section>
-        <h2>That's all for now!</h2>
-    </section>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <div>
+                    <h2>And that's it!</h2>
+                    But please say hi, I love new friends!
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <ul>
+                        <li><a>email: jchen2430@g.ucla.edu</a></li>
+                        <li><a href="https://www.linkedin.com/in/jennifer-chen-a78113242/">linkedin: Jennifer Chen</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

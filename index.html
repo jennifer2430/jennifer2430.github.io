@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <link href="./base.css" type="text/css" rel="stylesheet" />
-    </head>
 
-    <body>
+<head>
+    <link href="base.css" type="text/css" rel="stylesheet" />
+    <title>Jennifer Chen</title>
+</head>
 
-    </body>
+<body>
+    <section>
+        <div class="row">
+            <div class="left-col">
+                <img class="photo-class" src="img/me.jpg" alt="a selfie Jennifer took when she was bored">
+            </div>
+            <div class="right-col">
+                <h1>Hi! I'm Jennifer</h1>
+                <p>Currently, I'm a CSE sophomore @ UCLA</p>
+
+                <p>
+                    I like:
+                <ul class="fun-facts">
+                    <li>learning about computers :)</li>
+                    <li>math (in general)</li>
+                    <li>reading and writing</li>
+                    <li>looking at cute food pictures</li>
+                    <li>learning new languages!</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>A more detailed bio</h2>
+        <p>
+            I'm currently a sophomore studying computer science and electrical engineering at UCLA.
+            I'll also be minoring in Japanese once I finish Japan 80 in spring. <br>
+        </p>
+        <p>
+            I grew up in Taiwan and went to school there until I finished grade 10. I then finished
+            my last two years of high school in a boarding school in Victoria, Canada. That was fun.
+        </p>
+        <p>
+            I genuinely love what I've been learning here at UCLA. Having essentially no experience in
+            CS coming in, I feel like I've come so far just by learning from the amazing professors and peers here.
+            Now that I'm essentially done with my lower div requirements, I'm super excited to learn about
+            operating systems, compilers, machine learning, backend technologies, and anything else I can
+            get my hands on.
+        </p>
+    </section>
+
+    <section>
+        <h2>Internship experience!</h2>
+        <div class="experience-block">
+            <h3>
+                Software Intern @ Raydium Semiconductor (2022)
+            </h3>
+            <p>My first industry internship! Raydium Semiconductor is a company that designs integrated circuits used in
+                TV, car, and phone displays. As a
+                software intern, I worked in the algorithm team and mostly focused writing a new IC simulator
+                and integrating it with company code, all in c. I also worked on writing data visualization scripts in
+                GNU octave and python, as well as summarizing (to my best ability) a couple of papers on Kalman filters
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Things I Dabbled with at School</h2>
+        <div class="experience-block">
+            <h3>IEEE Pocket Racers</h3>
+            <p>My second yearlong (and ongoing) project with IEEE. This project focuses on computer vision
+                and machine learning. We're trying to build a car that can drive around a racetrack from images
+                it "sees" from a camera! So far, we've been learning about some math behind ML and will begin to
+                work on the actual car in spring quarter
+            </p>
+        </div>
+        <div class="experience-block">
+            <h3>Corkboard</h3>
+            <p>Corkboard is my CS 35L project, where my team built a webapp to help roommates track and manage their
+                fridge space. I mainly worked on the backend side of things, including storing, updating, and deleting
+                data from our firebase database, as well as the frontend logic to manage react states and display data
+                queries from the database. It was my first real experience working in backend, so it was super
+                rewarding!
+                100% would do again.
+            </p>
+        </div>
+        <div class="experience-block">
+            <h3>ACM TeachLA Dev Team</h3>
+            <p>I initially joined teachLA's react team to learn more about frontend development and technologies. After
+                a
+                quarter in the learning team, I felt that I was ready to contribute to one of teachLA's ongoing
+                projects.
+                Currently, I'm on the PenPals team, where we're working on developing a website that will help teach
+                kids
+                about coordinate systems.
+            </p>
+        </div>
+        <div class="experience-block">
+            <h3>IEEE OPS</h3>
+            <p>This is a yearlong project held by the IEEE club at UCLA, designed for beginners. I got to build
+                circuits,
+                work with Arduino, and make some cool projects like an Ipoduino and hand-following car :)
+            </p>
+        </div>
+        <p>For a more compact version, you can also see my resume <a href="files/jennifer_resume.pdf">here</a></p>
+    </section>
+    <section>
+        <h2>Courses I've taken</h2>
+        <div>
+            <a id="cs-course-link">Computer Science Courses</a>
+            <ul id="cs-course-content">
+                <li>CS 35L <small>Software Construction Lab, Professor Eggert, W23</small></li>
+                <li>CS 161 <small>Fundamentals of AI, Professor Gu, W23</small></li>
+                <li>CS 180 <small>Algorithms and Complexity, Professor Sarrafzadeh, F22</small></li>
+                <li>CS M51A <small>Logic Design of Digital Systems, Professor Abari, F22</small></li>
+                <li>CS 33 <small>Introduction to Computer Organization, Professor Reinman, Sp22</small></li>
+                <li>CS 32 <small>Professor Smallberg, W21</small></li>
+                <li>CS 31 <small>Professor Smallberg, F21</small></li>
+            </ul>
+            <a id="ee-course-link">Electrical Engineering Courses (Fun fact: I was EE in my freshman year)</a>
+            <ul id="ee-course-content">
+                <li>ECE 113 <small>Digital Signal Processing, Professor Kadambi, W23</small></li>
+                <li>ECE 131A <small>Probability and Statistics, Professor Dolecek, W23</small></li>
+                <li>ECE 102 <small>Signals and Systems, Professor Kao &lt;3, F22</small></li>
+                <li>ECE 189 <small>Honors Seminar, Professor Kao, F22</small></li>
+                <li>ECE 10H <small>Circuit Theory (Honors), Professor Darabi, F22</small></li>
+                <li>ECE 3 <small>Introduction to Electrical Engineering, Professor Briggs, Sp22</small></li>
+            </ul>
+            <a id="jp-course-link">Japanese Courses</a>
+            <ul id="jp-course-content">
+                <li>Japan 100B <small>Advanced Modern Japanese, Professor Hayashi, W23</small></li>
+            </ul>
+            <a id="other-course-link">Others</a>
+            <ul id="other-course-content">
+                <li>EngComp 3 <small>English Composition, Rhetoric, and Language, Professor Deuel, F22</small></li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Favorites outside of School</h2>
+        <ul>
+            <li>Genre - Fantasy</li>
+            <li>Book - I love love love the Mistborn series</li>
+            <li>Band - Recently, I've been listening to a lot of Cinema Staff</li>
+            <li>Food - Anything matcha</li>
+            <li>Studio Ghibli Movie - Has to be Totoro</li>
+            <li>Language - Admittedly, I only speak two fluently and one not-so-fluently, but Chinese</li>
+        </ul>
+    </section>
+    <section>
+        <h2>That's all for now!</h2>
+    </section>
+</body>
+
 </html>

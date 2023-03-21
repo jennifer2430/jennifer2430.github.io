@@ -1,0 +1,41 @@
+body {
+    padding: 5%
+}
+
+.photo-class {
+    border-radius: 20%;
+    max-width: 300px;
+    max-height: 280px;
+}
+
+.left-col {
+    flex: 40%
+}
+
+.right-col {
+    flex: 60%
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 50%
+}
+
+.experience-block {
+    border-radius: 15%;
+    border: 1px solid grey;
+    margin: 1%;
+    padding: 5%
+}
+
+small {
+    color: #696969;
+}

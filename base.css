@@ -127,4 +127,5 @@ small {
     background-color: #89c2d9;
     color: white;
     padding: 7%;
+    box-sizing: border-box;
 }

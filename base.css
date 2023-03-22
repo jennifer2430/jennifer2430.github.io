@@ -122,10 +122,17 @@ small {
 
 .flip-card-front {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #89c2d9;
     color: white;
     padding: 7%;
     box-sizing: border-box;
+}
+
+.cat-pic {
+    width: 60%;
+    height: 60%;
+    margin: 2%
 }

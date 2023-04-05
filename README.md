@@ -1,1 +1,1 @@
-# jennifer2430.github.io
+Hi! This is the repo for my website/half-casual-half-professional portfolio, which you can access [here](https://jennifer2430.github.io/). 
